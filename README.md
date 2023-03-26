@@ -18,7 +18,7 @@
 here a [live Demo link ](https://saharsaleh22.github.io/sorting-Visualizer/) for the sorting Visualizer
 
 
-## Authors
+## Author
 
 - [@saharSaleh22](https://www.github.com/saharSaleh22)
 
