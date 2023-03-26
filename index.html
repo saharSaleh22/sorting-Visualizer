@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Algorithms Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="buttons">
+    <button id="randomize">Randomize</button>
+    <button id="solve">Solve</button>
+    <p > array size</p>
+
+    <input type="range" id="size" min="10" max="100" step="10" value="50">
+    <p> sorting speed</p>
+    <input type="range" id="speed" min="1" max="10" step="1" value="5">
+    Algorithm:
+    <select id="algorithm" class="algorithm">
+      <option value="bubble" selected>Bubble sort</option>
+      <option value="insertion">Insertion sort</option>
+      <option value="merge">Merge sort</option>
+      <option value="Quick">Quick sort</option>
+      <option value="selection">Selection sort</option>
+      <option value="heap">Heap sort</option>
+    </select>
+  </div>
+  <script src="javascript/maincode.js"></script>
+  <script src="javascript/selectionsort.js"></script>
+  <script src="javascript/bubblesort.js"></script>
+  <script src="javascript/mergesort.js"></script>
+  <script src="javascript/quicksort.js"></script>
+  <script src="javascript/inserstionsort.js"></script>
+  <script src="javascript/heapsort.js"></script>
+</body>
+</html>
