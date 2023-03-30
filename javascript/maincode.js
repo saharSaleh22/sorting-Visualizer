@@ -47,7 +47,7 @@ function drawArray() {
   for (let i = 0; i < size; i++) {
     const x = i * barWidth;
     const y = height - array[i];
-    const color = `hsl(${(array[i] / height) * 360}, 100%, 50%)`;
+    const color = `hsl(${(array[i] / height) * 360}, 80%, 40%)`;
     ctx.fillStyle = color;
     ctx.fillRect(x, y, barWidth, array[i]);
   }
