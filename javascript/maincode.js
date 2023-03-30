@@ -98,7 +98,7 @@ async function solveArray() {
 
   algorithmDropdown.disabled = false;
 
-  solveButton.disabled = true;
+  solveButton.disabled = false;
   randomizeButton.disabled = false;
   sizeSlider.disabled = true;
   speedSlider.disabled = true;
