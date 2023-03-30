@@ -47,7 +47,7 @@ function drawArray() {
   for (let i = 0; i < size; i++) {
     const x = i * barWidth;
     const y = height - array[i];
-    const color = `hsl(${(array[i] / height) * 360}, 80%, 40%)`;
+    const color = `hsl(${(array[i] / height) * 180}, 90%, 50%)`;
     ctx.fillStyle = color;
     ctx.fillRect(x, y, barWidth, array[i]);
   }
@@ -67,10 +67,10 @@ function changeSpeed() {
 
 // Function to start the sorting
 async function solveArray() {
-  solveButton.disabled = true;
-  randomizeButton.disabled = true;
+  solveButton.disabled = false;
+  randomizeButton.disabled = false;
   sizeSlider.disabled = true;
-  speedSlider.disabled = true;
+  speedSlider.disabled = false;
   algorithmDropdown.disabled = true;
   switch (algorithm) {
     case "bubble":
@@ -98,10 +98,10 @@ async function solveArray() {
 
   algorithmDropdown.disabled = false;
 
-  solveButton.disabled = false;
+  solveButton.disabled = true;
   randomizeButton.disabled = false;
-  sizeSlider.disabled = false;
-  speedSlider.disabled = false;
+  sizeSlider.disabled = true;
+  speedSlider.disabled = true;
 }
 // Function to sleep for a certain number of milliseconds
 function sleep(ms) {
